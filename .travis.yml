@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t liu-lian/docker-react -f Dockerfile.dv .
+  - docker build -t liu-lian/docker-react -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true liu-lian/docker-react npm run test
